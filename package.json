@@ -1,0 +1,9 @@
+{
+  "name": "cpit405-lab9-recipe-finder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"start":"vite --host 0.0.0.0", "dev":"vite --host 0.0.0.0", "build":"vite build", "preview":"vite preview"},
+  "dependencies": {"react":"19.1.1", "react-dom":"19.1.1", "react-router":"7.5.0"},
+  "devDependencies": {"vite":"6.3.1"}
+}
