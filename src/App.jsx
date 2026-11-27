@@ -1,4 +1,3 @@
-﻿import React from 'react';
 import { BrowserRouter, HashRouter, Link, NavLink, Route, Routes } from 'react-router';
 import RecipeFinder from './RecipeFinder.jsx';
 
@@ -13,8 +12,7 @@ function About() {
   </main>;
 }
 
-const Router = window.__LAB9_STATIC_PREVIEW__ ? HashRouter : BrowserRouter;
-
+const Router = HashRouter;
 export default function App() {
   return <Router>
     <header className="topbar"><div className="site-width bar-inner">
@@ -26,6 +24,6 @@ export default function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="*" element={<main className="site-width"><h1>Page not found</h1><Link to="/">Home</Link></main>}/>
     </Routes>
-    <footer className="site-width foot">CPIT405 Â· Lab 9 Â· React and Spoonacular API</footer>
+    <footer className="site-width foot">CPIT405 · Lab 9 · React and Spoonacular API</footer>
   </Router>;
 }
